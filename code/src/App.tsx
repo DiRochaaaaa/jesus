@@ -1,5 +1,27 @@
 import React, { useEffect, useRef } from 'react';
-import { MessageCircle, Heart, HelpingHand as PrayingHands, Space as Peace, Sparkles, Sun, Moon, Stars, CloudRain, Wind, Feather, Compass, Lightbulb, Flower2, Bird, Move as Dove, Cross, BookOpen, HeartHandshake, Infinity, Leaf } from 'lucide-react';
+// Remova o Cross daqui
+import { 
+  MessageCircle, 
+  Heart, 
+  HelpingHand as PrayingHands, 
+  Space as Peace, 
+  Sparkles, 
+  Sun, 
+  Moon, 
+  Stars, 
+  CloudRain, 
+  Wind, 
+  Feather, 
+  Compass, 
+  Lightbulb, 
+  Flower2, 
+  Bird, 
+  Move as Dove, 
+  BookOpen, 
+  HeartHandshake, 
+  Infinity, 
+  Leaf 
+} from 'lucide-react';
 
 function App() {
   const handleWhatsAppClick = () => {
@@ -61,14 +83,28 @@ function App() {
             </button>
           </nav>
           
-          <div className="relative z-10 max-w-5xl mx-auto text-center space-y-10 py-20">
+          <div className="relative z-10 max-w-5xl mx-auto text-center space-y-10 py-0">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-[#8DB7BA]/20 blur-3xl rounded-full transform animate-pulse"></div>
-              <Cross className="w-40 h-40 text-[#8DB7BA] mx-auto animate-float animate-glow relative z-10" />
+              
+              {/* Substituindo <Cross /> pelo SVG customizado */}
+              <svg
+                fill="#8DB7BA"
+                viewBox="-64 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#8DB7BA"
+                className="w-40 h-40 mx-auto animate-float animate-glow relative z-10"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M352 128h-96V32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v96H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h96v224c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V256h96c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32z"></path>
+                </g>
+              </svg>
             </div>
-            <h1 className="text-7xl md:text-9xl font-bold text-[#B84C4C] leading-tight animate-slide-in-left">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#B84C4C] leading-tight animate-slide-in-left">
               Encontre Paz
-              <span className="block text-4xl md:text-6xl mt-6 text-[#8DB7BA] font-light">
+              <span className="block text-4xl md:text-6xl mt-0 text-[#8DB7BA] font-light">
                 Em Uma Conversa Que Transforma Vidas
               </span>
             </h1>
@@ -79,10 +115,10 @@ function App() {
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mt-12">
               <button
                 onClick={handleWhatsAppClick}
-                className="bg-[#B84C4C] hover:bg-[#a43d3d] text-white px-12 py-6 rounded-full flex items-center gap-3 text-2xl transform hover:scale-105 transition-all shadow-2xl animate-expand group"
+                className="bg-[#B84C4C] hover:bg-[#a43d3d] text-white px-12 py-3 rounded-full flex items-center gap-3 text-2xl transform hover:scale-105 transition-all shadow-2xl animate-expand group"
               >
                 <MessageCircle className="w-8 h-8 group-hover:animate-bounce" />
-                <span>Comece Sua Jornada Agora</span>
+                <span>Clique aqui para conversar com jesus</span>
               </button>
             </div>
           </div>
@@ -253,8 +289,23 @@ function App() {
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-[#8DB7BA]/20 blur-3xl rounded-full transform animate-pulse"></div>
-              <Cross className="w-28 h-28 text-[#8DB7BA] mx-auto animate-float relative z-10" />
+
+              {/* Substituindo <Cross /> pelo SVG customizado (menor) */}
+              <svg
+                fill="#8DB7BA"
+                viewBox="-64 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#8DB7BA"
+                className="w-28 h-28 mx-auto animate-float relative z-10"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M352 128h-96V32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v96H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h96v224c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V256h96c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32z"></path>
+                </g>
+              </svg>
             </div>
+
             <h2 className="text-5xl md:text-7xl font-bold text-[#B84C4C] observe-animation leading-tight">
               Sua Transformação 
               <span className="block text-[#8DB7BA] mt-4">Começa Agora</span>
