@@ -5,10 +5,10 @@ path = "code"
 nixPkgs = ["nodejs_18"]
 
 [phases.install]
-cmds = ["npm install"]
+cmds = ["cd code && npm install"]
 
 [phases.build]
-cmds = ["npm run build"]
+cmds = ["cd code && npm run build"]
 
 [start]
-cmd = "npx serve -s dist" 
+cmd = "cd code && npx serve -s dist" 
